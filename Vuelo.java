@@ -1,0 +1,49 @@
+package EMPRESAAVIACION;
+/**
+ *
+ * @author sg702-12
+ */
+public class Vuelo {
+    
+    private int dias, horas;
+    private String codigo;
+    
+    public final static int domingo = 1;
+    public final static int lunes = 2;
+    public final static int martes = 3;
+    public final static int miercoles = 4;
+    public final static int jueves = 5;
+    public final static int viernes = 6;
+    public final static int sabado = 7;
+    
+    public Vuelo(){
+        }
+    public Vuelo(int losdias, int lashoras, String elcodigo){
+        this.dias = losdias;
+        this.horas = lashoras;
+        this.codigo = elcodigo;
+        
+    }
+    public int getDias (){
+        return dias;
+    }
+    public void setDias (int dias){
+        this.dias=dias;
+    }
+    public int getHoras (){
+        return horas;
+    }
+    public void setHoras (int horas){
+        this.horas = horas;
+    }
+    public String getCodigo(){
+        return codigo;
+    }
+    public void setCodigo(String codigo){
+        this.codigo = codigo;
+    }
+@Override
+    public String toString() {
+        return "Vuelo{" + "dia=" + dias + ", hora=" + horas + ", codigo=" + codigo + '}';
+    }
+}
