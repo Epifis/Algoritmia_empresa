@@ -6,24 +6,28 @@ package EMPRESAAVIACION;
  */
 public class empresa {
     private String nombre, direccion;
-    private ruta ruta01;
+    private ruta r01;
+    private ruta r02;
+    private ruta r03;
+
     
     //Declaracion constructor
     
     public empresa(){
-        ruta01= new ruta();
-        ruta02= new ruta();
-        ruta03= new ruta();
+        r01= new ruta();
+        r02= new ruta();
+        r03= new ruta();
+        
 }
-    public Empresa(String unNombre, String unaDireccion){
+    public empresa(String unNombre, String unaDireccion){
         this.nombre=unNombre;
         this.direccion=unaDireccion;
     }
 
-    public Empresa(Ruta ruta01, Ruta ruta02, Ruta ruta03) {
-        this.ruta01 = ruta01;
-        this.ruta02 = ruta02;
-        this.ruta03 = ruta03;
+    public empresa(ruta r01, ruta r02, ruta r03){
+        this.r01 = r01;
+        this.r02 = r02;
+        this.r03 = r03;
     }
     public String getNombre(){
         return nombre;
@@ -48,36 +52,35 @@ public class empresa {
     
     //Get y set para las rutas
 
-    public Ruta getRuta01() {
-        return ruta01;
+    public ruta getRuta01() {
+        return r01;
     }
 
-    public void setRuta01(Ruta ruta01) {
-        this.ruta01 = ruta01;
+    public void setRuta01(ruta r01) {
+        this.r01 = r01;
     }
 
-    public Ruta getRuta02() {
-        return ruta02;
+    public ruta getRuta02() {
+        return r02;
     }
 
-    public void setRuta02(Ruta ruta02) {
-        this.ruta02 = ruta02;
+    public void setRuta02(ruta r02) {
+        this.r02 = r02;
     }
 
-    public Ruta getRuta03() {
-        return ruta03;
+    public ruta getRuta03() {
+        return r03;
     }
 
-    public void setRuta03(Ruta ruta03) {
-        this.ruta03 = ruta03;
+    public void setRuta03(ruta r03) {
+        this.r03 = r03;
     }
-
+   
     @Override
     public String toString() {
-        return "Empresa{" + "nombre=" + nombre + ", direccion=" + direccion + ",\n ruta01=" + ruta01.toString() + ",\n ruta02=" + ruta02.toString() + ",\n ruta03=" + ruta03.toString() + '}';
+        return "Empresa" + "nombre=" + nombre + ", direccion=" + direccion + ",\n ruta01=" + r01.toString() + ",\n ruta02=" + r02.toString() + ",\n ruta03=" + r03.toString();
     }
     
     
 
 }
-
