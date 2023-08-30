@@ -1,4 +1,5 @@
 package EMPRESAAVIACION;
+import java.util.scanner;
 
 /**
  *
@@ -76,7 +77,11 @@ public class empresa {
         this.r03 = r03;
     }
     public void leerAtributos(){
-        
+        Scanner sc= new Scanner (System.in);
+        System.out.println("Escriba el Nombre: ");
+        this.nombre= scan.nextString();
+        System.out.println("Escriba la dirección: ");
+        this.direccion = scan.nextString();
     }
     primero.leerAtributos();
     
