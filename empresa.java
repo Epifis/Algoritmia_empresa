@@ -75,7 +75,14 @@ public class empresa {
     public void setRuta03(ruta r03) {
         this.r03 = r03;
     }
-   
+    public void leerAtributos(){
+        
+    }
+    primero.leerAtributos();
+    
+    double nuevosalario;
+    nuevosalario= primero.getsalario()*2;
+    
     @Override
     public String toString() {
         return "Empresa" + "nombre=" + nombre + ", direccion=" + direccion + ",\n ruta01=" + r01.toString() + ",\n ruta02=" + r02.toString() + ",\n ruta03=" + r03.toString();
